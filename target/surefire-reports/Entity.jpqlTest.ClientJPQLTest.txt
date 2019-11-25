@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: Entity.jpqlTest.ClientJPQLTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 4.816 sec <<< FAILURE! - in Entity.jpqlTest.ClientJPQLTest
+allClients(Entity.jpqlTest.ClientJPQLTest)  Time elapsed: 0.01 sec  <<< ERROR!
+javax.persistence.PersistenceException: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [jdbc/ductum].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
+Caused by: org.eclipse.persistence.exceptions.ValidationException: 
+
+Exception Description: Cannot acquire data source [jdbc/ductum].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
+Caused by: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl}
+Caused by: javax.naming.NameNotFoundException: ductum not found
+
+allClients(Entity.jpqlTest.ClientJPQLTest)  Time elapsed: 0.01 sec  <<< ERROR!
+java.lang.NullPointerException
+
+clientByCNPJ(Entity.jpqlTest.ClientJPQLTest)  Time elapsed: 0.002 sec  <<< ERROR!
+javax.persistence.PersistenceException: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [jdbc/ductum].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
+Caused by: org.eclipse.persistence.exceptions.ValidationException: 
+
+Exception Description: Cannot acquire data source [jdbc/ductum].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
+Caused by: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl}
+Caused by: javax.naming.NameNotFoundException: ductum not found
+
+clientByCNPJ(Entity.jpqlTest.ClientJPQLTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException
+
+clientByName(Entity.jpqlTest.ClientJPQLTest)  Time elapsed: 0.001 sec  <<< ERROR!
+javax.persistence.PersistenceException: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [jdbc/ductum].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
+Caused by: org.eclipse.persistence.exceptions.ValidationException: 
+
+Exception Description: Cannot acquire data source [jdbc/ductum].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
+Caused by: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl}
+Caused by: javax.naming.NameNotFoundException: ductum not found
+
+clientByName(Entity.jpqlTest.ClientJPQLTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException
+
+allActiveClients(Entity.jpqlTest.ClientJPQLTest)  Time elapsed: 0.001 sec  <<< ERROR!
+javax.persistence.PersistenceException: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [jdbc/ductum].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
+Caused by: org.eclipse.persistence.exceptions.ValidationException: 
+
+Exception Description: Cannot acquire data source [jdbc/ductum].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
+Caused by: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl}
+Caused by: javax.naming.NameNotFoundException: ductum not found
+
+allActiveClients(Entity.jpqlTest.ClientJPQLTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+

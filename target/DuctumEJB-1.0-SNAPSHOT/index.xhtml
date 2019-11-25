@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui">
+ 
+     <h:head>
+ 
+     </h:head>
+ 
+    <h:body>
+        <p:outputLabel value="Lista de Solicitações" />
+        <p:dataTable value="#{solicitationBean.lista}" var="solicitation">
+            <p:column>
+                <f:facet name="header">Nome</f:facet>
+                <p:outputLabel value="#{solicitation.name}"/>
+            </p:column>
+             <p:column>
+                  <f:facet name="header">Descrição</f:facet>
+                 <p:outputLabel value="#{solicitation.description}"/>
+                </p:column> 
+            
+            <p:column>
+                    <f:facet name="header">Tipo</f:facet>
+                    <p:outputLabel value="#{solicitation.type}"/>
+                </p:column>
+            <p:column>
+                    <f:facet name="header">Status</f:facet>
+                    <p:outputLabel value="#{solicitation.status}"/>
+            </p:column>
+            </p:dataTable>
+    </h:body>
+</html>
