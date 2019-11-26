@@ -9,6 +9,8 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
@@ -22,8 +24,18 @@ import org.hibernate.validator.constraints.br.CNPJ;
 @Table(name="TB_CLIENT") 
 @DiscriminatorValue(value = "C")
 @PrimaryKeyJoinColumn(name="ID_USER", referencedColumnName = "ID")
+@NamedQueries(
+        {
+            @NamedQuery(
+                    name = Client.ALL_CLIENTS,
+                    query = "SELECT c FROM Client c"
+            )
+        }
+)
 public class Client extends UserSuper implements Serializable {
     
+    public static final String ALL_CLIENTS = "All_Clients";
+
     @ManyToMany
     @JoinTable(name="client_has_Solicitations", joinColumns=
     {@JoinColumn(name="id_Client")}, inverseJoinColumns=

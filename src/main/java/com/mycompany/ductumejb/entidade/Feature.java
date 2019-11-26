@@ -14,6 +14,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -29,8 +31,18 @@ import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
 @Table(name="TB_FEATURE") 
-public class Feature   extends Entidade implements Serializable {
-
+@NamedQueries(
+        {
+            @NamedQuery(
+                    name = Feature.ALL_FEATURES,
+                    query = "SELECT f FROM Feature f"
+            )
+        }
+)
+public class Feature extends Entidade implements Serializable {
+    
+    public static final String ALL_FEATURES = "All_Features";
+  
     @NotBlank(message= "{Entity.Feature.title}")
     @Column(name = "title")
     private String title;

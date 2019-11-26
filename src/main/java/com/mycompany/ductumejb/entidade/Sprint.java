@@ -16,6 +16,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
@@ -27,7 +29,18 @@ import javax.validation.constraints.NotNull;
  */
 @Entity
 @Table(name="TB_SPRINT")
+
+@NamedQueries(
+        {
+            @NamedQuery(
+                    name = Sprint.ALL_SPRINTS,
+                    query = "SELECT s FROM Sprint s"
+            )
+        }
+)
 public class Sprint  extends Entidade implements Serializable {
+    
+    public static final String ALL_SPRINTS = "All_Sprints";    
     private static final long serialVersionUID = 1L;
 
     @NotNull

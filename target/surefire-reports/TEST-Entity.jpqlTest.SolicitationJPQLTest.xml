@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Entity.jpqlTest.SolicitationJPQLTest" time="3.614" tests="10" errors="10" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Entity.jpqlTest.SolicitationJPQLTest" time="0.005" tests="2" errors="2" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/amd64"/>
@@ -14,9 +14,8 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB"/>
+    <property name="user.dir" value="/home/deecarneiro/NetBeansProjects/DuctumWeb"/>
     <property name="java.runtime.version" value="1.8.0_111-b14"/>
-    <property name="netbeans.deploy" value="true"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/endorsed"/>
     <property name="os.arch" value="amd64"/>
@@ -31,18 +30,18 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.0.0-36-generic"/>
+    <property name="os.version" value="5.0.0-23-generic"/>
     <property name="user.home" value="/home/deecarneiro"/>
-    <property name="user.timezone" value="America/Recife"/>
+    <property name="user.timezone" value="America/Fortaleza"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
     <property name="user.name" value="deecarneiro"/>
     <property name="java.class.path" value="/home/deecarneiro/netbeans-8.2/java/maven/boot/plexus-classworlds-2.4.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/home/deecarneiro/jdk1.8.0_111/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dnetbeans.deploy=true -Dmaven.ext.class.path=/home/deecarneiro/netbeans-8.2/java/maven-nblib/netbeans-eventspy.jar package"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/home/deecarneiro/netbeans-8.2/java/maven-nblib/netbeans-eventspy.jar clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="pt"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -60,193 +59,11 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="allSolicitation" classname="Entity.jpqlTest.SolicitationJPQLTest" time="0.009">
-    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException&#10;Exception Description: Cannot acquire data source [jdbc/ductum].&#10;Internal Exception: javax.naming.NamingException: Lookup failed for &apos;jdbc/ductum&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: 
-Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-Caused by: org.eclipse.persistence.exceptions.ValidationException: 
-
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-Caused by: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl}
-Caused by: javax.naming.NameNotFoundException: ductum not found
-</error>
-    <system-out><![CDATA[[EL Config]: metadata: 2019-11-25 01:55:26.286--ServerSession(1338946232)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.mycompany.ductumejb.entidade.Entidade] is set to [FIELD].
-[EL Config]: metadata: 2019-11-25 01:55:26.286--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field project] is being defaulted to: class com.mycompany.ductumejb.entidade.Project.
-[EL Config]: metadata: 2019-11-25 01:55:26.287--ServerSession(1338946232)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.mycompany.ductumejb.entidade.Client] is set to [FIELD].
-[EL Config]: metadata: 2019-11-25 01:55:26.287--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field solicitations] is being defaulted to: class com.mycompany.ductumejb.entidade.Solicitation.
-[EL Config]: metadata: 2019-11-25 01:55:26.287--ServerSession(1338946232)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.mycompany.ductumejb.entidade.Sprint] is set to [FIELD].
-[EL Config]: metadata: 2019-11-25 01:55:26.287--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field features] is being defaulted to: class com.mycompany.ductumejb.entidade.Feature.
-[EL Config]: metadata: 2019-11-25 01:55:26.287--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field project] is being defaulted to: class com.mycompany.ductumejb.entidade.Project.
-[EL Config]: metadata: 2019-11-25 01:55:26.287--ServerSession(1338946232)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.mycompany.ductumejb.entidade.Employee] is set to [FIELD].
-[EL Config]: metadata: 2019-11-25 01:55:26.288--ServerSession(1338946232)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.mycompany.ductumejb.entidade.Comment] is set to [FIELD].
-[EL Config]: metadata: 2019-11-25 01:55:26.288--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field user] is being defaulted to: class com.mycompany.ductumejb.entidade.Employee.
-[EL Config]: metadata: 2019-11-25 01:55:26.288--ServerSession(1338946232)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.mycompany.ductumejb.entidade.Meeting] is set to [FIELD].
-[EL Config]: metadata: 2019-11-25 01:55:26.288--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field sprint] is being defaulted to: class com.mycompany.ductumejb.entidade.Sprint.
-[EL Config]: metadata: 2019-11-25 01:55:26.288--ServerSession(1338946232)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.mycompany.ductumejb.entidade.Feature] is set to [FIELD].
-[EL Config]: metadata: 2019-11-25 01:55:26.288--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field comments] is being defaulted to: class com.mycompany.ductumejb.entidade.Comment.
-[EL Config]: metadata: 2019-11-25 01:55:26.289--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field responsible] is being defaulted to: class com.mycompany.ductumejb.entidade.Employee.
-[EL Config]: metadata: 2019-11-25 01:55:26.289--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field reporter] is being defaulted to: class com.mycompany.ductumejb.entidade.Employee.
-[EL Config]: metadata: 2019-11-25 01:55:26.289--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field responsible] is being defaulted to: class com.mycompany.ductumejb.entidade.Employee.
-[EL Config]: metadata: 2019-11-25 01:55:26.289--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field client] is being defaulted to: class com.mycompany.ductumejb.entidade.Client.
-[EL Config]: metadata: 2019-11-25 01:55:26.289--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field employees] is being defaulted to: class com.mycompany.ductumejb.entidade.Employee.
-[EL Config]: metadata: 2019-11-25 01:55:26.289--ServerSession(1338946232)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.mycompany.ductumejb.entidade.Solicitation] is being defaulted to: Solicitation.
-[EL Config]: metadata: 2019-11-25 01:55:26.29--ServerSession(1338946232)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.mycompany.ductumejb.entidade.Client] is being defaulted to: Client.
-[EL Config]: metadata: 2019-11-25 01:55:26.29--ServerSession(1338946232)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.mycompany.ductumejb.entidade.UserSuper] is being defaulted to: UserSuper.
-[EL Config]: metadata: 2019-11-25 01:55:26.29--ServerSession(1338946232)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.mycompany.ductumejb.entidade.Sprint] is being defaulted to: Sprint.
-[EL Config]: metadata: 2019-11-25 01:55:26.291--ServerSession(1338946232)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.mycompany.ductumejb.entidade.Employee] is being defaulted to: Employee.
-[EL Config]: metadata: 2019-11-25 01:55:26.291--ServerSession(1338946232)--Thread(Thread[main,5,main])--The column name for element [cpf] is being defaulted to: CPF.
-[EL Config]: metadata: 2019-11-25 01:55:26.291--ServerSession(1338946232)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.mycompany.ductumejb.entidade.Comment] is being defaulted to: Comment.
-[EL Config]: metadata: 2019-11-25 01:55:26.291--ServerSession(1338946232)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.mycompany.ductumejb.entidade.Meeting] is being defaulted to: Meeting.
-[EL Config]: metadata: 2019-11-25 01:55:26.291--ServerSession(1338946232)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.mycompany.ductumejb.entidade.Feature] is being defaulted to: Feature.
-[EL Config]: metadata: 2019-11-25 01:55:26.292--ServerSession(1338946232)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.mycompany.ductumejb.entidade.Project] is being defaulted to: Project.
-[EL Config]: metadata: 2019-11-25 01:55:26.292--ServerSession(1338946232)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field project] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-25 01:55:26.292--ServerSession(1338946232)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field solicitations] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-25 01:55:26.292--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field solicitations] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-25 01:55:26.292--ServerSession(1338946232)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field features] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-25 01:55:26.292--ServerSession(1338946232)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field project] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-25 01:55:26.293--ServerSession(1338946232)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field sprint] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-25 01:55:26.293--ServerSession(1338946232)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field comments] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-25 01:55:26.293--ServerSession(1338946232)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field reporter] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-25 01:55:26.293--ServerSession(1338946232)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field client] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-25 01:55:26.293--ServerSession(1338946232)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field employees] is being defaulted to: ID.
-[EL Config]: metadata: 2019-11-25 01:55:26.293--ServerSession(1338946232)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field employees] is being defaulted to: ID.
-[EL Info]: 2019-11-25 01:55:29.926--ServerSession(1338946232)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd
-[EL Config]: connection: 2019-11-25 01:55:29.926--ServerSession(1338946232)--Connection(894766455)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
-	platform=>MySQLPlatform
-	user name=> "root"
-	connector=>JNDIConnector datasource name=>jdbc/ductum
-))
-[EL Severe]: 2019-11-25 01:55:29.927--ServerSession(1338946232)--Thread(Thread[main,5,main])--Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-[EL Severe]: ejb: 2019-11-25 01:55:29.927--ServerSession(1338946232)--Thread(Thread[main,5,main])--Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-]]></system-out>
-  </testcase>
-  <testcase name="allSolicitation" classname="Entity.jpqlTest.SolicitationJPQLTest" time="0.009">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+  <testcase name="Entity.jpqlTest.SolicitationJPQLTest" classname="Entity.jpqlTest.SolicitationJPQLTest" time="0.005">
+    <error message="No Persistence provider for EntityManager named com.mycompany_DuctumMaven_jar_1.0-SNAPSHOTPU" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: No Persistence provider for EntityManager named com.mycompany_DuctumMaven_jar_1.0-SNAPSHOTPU
 </error>
   </testcase>
-  <testcase name="solicitationByStatus" classname="Entity.jpqlTest.SolicitationJPQLTest" time="0.002">
-    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException&#10;Exception Description: Cannot acquire data source [jdbc/ductum].&#10;Internal Exception: javax.naming.NamingException: Lookup failed for &apos;jdbc/ductum&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: 
-Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-Caused by: org.eclipse.persistence.exceptions.ValidationException: 
-
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-Caused by: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl}
-Caused by: javax.naming.NameNotFoundException: ductum not found
-</error>
-    <system-out><![CDATA[[EL Info]: 2019-11-25 01:55:29.929--ServerSession(1338946232)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd
-[EL Config]: connection: 2019-11-25 01:55:29.929--ServerSession(1338946232)--Connection(566513810)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
-	platform=>MySQLPlatform
-	user name=> "root"
-	connector=>JNDIConnector datasource name=>jdbc/ductum
-))
-[EL Severe]: 2019-11-25 01:55:29.929--ServerSession(1338946232)--Thread(Thread[main,5,main])--Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-[EL Severe]: ejb: 2019-11-25 01:55:29.929--ServerSession(1338946232)--Thread(Thread[main,5,main])--Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-]]></system-out>
-  </testcase>
-  <testcase name="solicitationByStatus" classname="Entity.jpqlTest.SolicitationJPQLTest" time="0.002">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-</error>
-  </testcase>
-  <testcase name="solicitationByDescription" classname="Entity.jpqlTest.SolicitationJPQLTest" time="0.002">
-    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException&#10;Exception Description: Cannot acquire data source [jdbc/ductum].&#10;Internal Exception: javax.naming.NamingException: Lookup failed for &apos;jdbc/ductum&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: 
-Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-Caused by: org.eclipse.persistence.exceptions.ValidationException: 
-
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-Caused by: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl}
-Caused by: javax.naming.NameNotFoundException: ductum not found
-</error>
-    <system-out><![CDATA[[EL Info]: 2019-11-25 01:55:29.931--ServerSession(1338946232)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd
-[EL Config]: connection: 2019-11-25 01:55:29.931--ServerSession(1338946232)--Connection(1341521250)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
-	platform=>MySQLPlatform
-	user name=> "root"
-	connector=>JNDIConnector datasource name=>jdbc/ductum
-))
-[EL Severe]: 2019-11-25 01:55:29.931--ServerSession(1338946232)--Thread(Thread[main,5,main])--Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-[EL Severe]: ejb: 2019-11-25 01:55:29.931--ServerSession(1338946232)--Thread(Thread[main,5,main])--Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-]]></system-out>
-  </testcase>
-  <testcase name="solicitationByDescription" classname="Entity.jpqlTest.SolicitationJPQLTest" time="0.003">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-</error>
-  </testcase>
-  <testcase name="solicitationByName" classname="Entity.jpqlTest.SolicitationJPQLTest" time="0.002">
-    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException&#10;Exception Description: Cannot acquire data source [jdbc/ductum].&#10;Internal Exception: javax.naming.NamingException: Lookup failed for &apos;jdbc/ductum&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: 
-Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-Caused by: org.eclipse.persistence.exceptions.ValidationException: 
-
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-Caused by: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl}
-Caused by: javax.naming.NameNotFoundException: ductum not found
-</error>
-    <system-out><![CDATA[[EL Info]: 2019-11-25 01:55:29.933--ServerSession(1338946232)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd
-[EL Config]: connection: 2019-11-25 01:55:29.933--ServerSession(1338946232)--Connection(321399553)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
-	platform=>MySQLPlatform
-	user name=> "root"
-	connector=>JNDIConnector datasource name=>jdbc/ductum
-))
-[EL Severe]: 2019-11-25 01:55:29.933--ServerSession(1338946232)--Thread(Thread[main,5,main])--Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-[EL Severe]: ejb: 2019-11-25 01:55:29.934--ServerSession(1338946232)--Thread(Thread[main,5,main])--Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-]]></system-out>
-  </testcase>
-  <testcase name="solicitationByName" classname="Entity.jpqlTest.SolicitationJPQLTest" time="0.002">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-</error>
-  </testcase>
-  <testcase name="solicitationByType" classname="Entity.jpqlTest.SolicitationJPQLTest" time="0.002">
-    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException&#10;Exception Description: Cannot acquire data source [jdbc/ductum].&#10;Internal Exception: javax.naming.NamingException: Lookup failed for &apos;jdbc/ductum&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: 
-Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-Caused by: org.eclipse.persistence.exceptions.ValidationException: 
-
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-Caused by: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl}
-Caused by: javax.naming.NameNotFoundException: ductum not found
-</error>
-    <system-out><![CDATA[[EL Info]: 2019-11-25 01:55:29.936--ServerSession(1338946232)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd
-[EL Config]: connection: 2019-11-25 01:55:29.936--ServerSession(1338946232)--Connection(231220021)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
-	platform=>MySQLPlatform
-	user name=> "root"
-	connector=>JNDIConnector datasource name=>jdbc/ductum
-))
-[EL Severe]: 2019-11-25 01:55:29.936--ServerSession(1338946232)--Thread(Thread[main,5,main])--Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-[EL Severe]: ejb: 2019-11-25 01:55:29.936--ServerSession(1338946232)--Thread(Thread[main,5,main])--Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: Cannot acquire data source [jdbc/ductum].
-Internal Exception: javax.naming.NamingException: Lookup failed for 'jdbc/ductum' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: ductum not found]
-]]></system-out>
-  </testcase>
-  <testcase name="solicitationByType" classname="Entity.jpqlTest.SolicitationJPQLTest" time="0.002">
+  <testcase name="Entity.jpqlTest.SolicitationJPQLTest" classname="Entity.jpqlTest.SolicitationJPQLTest" time="0.005">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 </error>
   </testcase>

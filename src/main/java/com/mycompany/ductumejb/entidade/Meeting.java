@@ -16,6 +16,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -28,8 +30,18 @@ import org.hibernate.validator.constraints.NotBlank;
  */
 @Entity
 @Table(name="TB_MEETING")
-public class Meeting   extends Entidade implements Serializable{
-
+@NamedQueries(
+        {
+            @NamedQuery(
+                    name = Meeting.ALL_MEETINGS,
+                    query = "SELECT m FROM Meeting m"
+            )
+        }
+)
+public class Meeting extends Entidade implements Serializable {
+    
+    public static final String ALL_MEETINGS = "All_Meetings";
+  
     @NotBlank( message = "{Entity.Meeting.title}")
     @Column(name="title")
     private String title;

@@ -9,6 +9,8 @@ import com.mycompany.ductumejb.entidade.Sprint;
 import java.util.List;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
+import static javax.ejb.TransactionAttributeType.SUPPORTS;
 import javax.validation.executable.ExecutableType;
 import javax.validation.executable.ValidateOnExecution;
 
@@ -26,41 +28,8 @@ public class SprintService extends Servico<Sprint> {
         return new Sprint();
     }
 
-    @Override
-    protected List<Sprint> consultarEntidades(Object[] parametros, String nomeQuery) {
-        return super.consultarEntidades(parametros, nomeQuery); //To change body of generated methods, choose Tools | Templates.
+   @TransactionAttribute(SUPPORTS)
+    public List<Sprint> consultarEntidades() {
+       return consultarEntidades( new Object[] {}, Sprint.ALL_SPRINTS);
     }
-
-    @Override
-    protected Sprint consultarEntidade(Object[] parametros, String nomeQuery) {
-        return super.consultarEntidade(parametros, nomeQuery); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public Sprint consultarPorId(Long id) {
-        return super.consultarPorId(id); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public Sprint atualizar(Sprint entidade) {
-        return super.atualizar(entidade); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void persistir(Sprint entidade) {
-        super.persistir(entidade); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public boolean existe(Sprint entidade) {
-        return super.existe(entidade); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    protected void setClasse(Class<Sprint> classe) {
-        super.setClasse(classe); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    
-    
 }

@@ -33,8 +33,20 @@ public class SolicitationServiceTest extends Teste{
     
     @Test 
     public void consultarToddos(){
-       assertEquals(6, solicitationServico.getSolicitations().size());
+       assertEquals(6, solicitationServico.consultarEntidades().size());
     }
+   
+    
+//    @Test
+//    public void persistir(){
+//        Solicitation solicitation = new Solicitation();
+//        solicitation.setName("Nome");
+//        solicitation.setDescription("description");
+//        solicitationServico.persistir(solicitation);
+//        assertNotNull(solicitation);
+//    }
+//    
+  
     
     
     //Persistir, Atualziar e Remover  

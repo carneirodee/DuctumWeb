@@ -8,7 +8,12 @@
      </h:head>
  
     <h:body>
-        <p:outputLabel value="Lista de Solicitações" />
+        <p:outputLabel value="Lista de Solicitações" /> 
+        <h:form>
+                    <p:commandButton value="Inserir Solicitação" action="cadastroSolicitation" ajax="false"/>
+
+        </h:form>
+        <br />
         <p:dataTable value="#{solicitationBean.lista}" var="solicitation">
             <p:column>
                 <f:facet name="header">Nome</f:facet>

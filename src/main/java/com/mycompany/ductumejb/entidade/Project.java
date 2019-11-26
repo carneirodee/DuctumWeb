@@ -16,6 +16,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -31,10 +33,19 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Access(AccessType.FIELD)
 @Table(name = "TB_PROJECT")
-
+@NamedQueries(
+        {
+            @NamedQuery(
+                    name = Project.ALL_PROJECTS,
+                    query = "SELECT p FROM Project p"
+            )
+        }
+)
 public class Project  extends Entidade implements Serializable {
-    private static final long serialVersionUID = 1L;
     
+    public static final String ALL_PROJECTS = "All_Projects";
+
+    private static final long serialVersionUID = 1L;
     @Column(name="name")
     private String name;
     

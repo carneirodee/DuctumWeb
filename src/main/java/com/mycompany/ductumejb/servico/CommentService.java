@@ -9,6 +9,8 @@ import com.mycompany.ductumejb.entidade.Comment;
 import java.util.List;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
+import static javax.ejb.TransactionAttributeType.SUPPORTS;
 import javax.validation.executable.ExecutableType;
 import javax.validation.executable.ValidateOnExecution;
 
@@ -23,8 +25,11 @@ public class CommentService extends Servico<Comment> {
 
     @Override
     public Comment criar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new Comment();
     }
 
-   
+    @TransactionAttribute(SUPPORTS)
+    public List<Comment> consultarEntidades() {
+       return consultarEntidades( new Object[] {}, Comment.ALL_COMMENTS);
+    }  
 }

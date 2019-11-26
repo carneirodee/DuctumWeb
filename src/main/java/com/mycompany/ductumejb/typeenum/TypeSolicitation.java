@@ -13,4 +13,5 @@ public enum TypeSolicitation {
     NEW_FEATURE,
     NEW_RELEASE,
     DOCUMENT
+    
 }

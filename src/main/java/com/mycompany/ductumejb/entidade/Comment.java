@@ -14,6 +14,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import org.hibernate.validator.constraints.NotBlank;
@@ -24,8 +26,18 @@ import org.hibernate.validator.constraints.NotBlank;
  */
 @Entity
 @Table(name="TB_COMENT") 
-public class Comment  extends Entidade implements Serializable{
+@NamedQueries(
+        {
+            @NamedQuery(
+                    name = Comment.ALL_COMMENTS,
+                    query = "SELECT c FROM Comment c"
+            )
+        }
+)
+public class Comment extends Entidade implements Serializable {
     
+    public static final String ALL_COMMENTS = "All_Comments";
+
     @NotBlank(message = "{Entity.Comment.content}")
     @Column(name = "content")
     private String content;

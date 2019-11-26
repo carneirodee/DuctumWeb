@@ -26,10 +26,10 @@ import javax.validation.executable.ValidateOnExecution;
 @ValidateOnExecution(type = ExecutableType.ALL)
 public class SolicitationService extends Servico<Solicitation> {
 
-   @TransactionAttribute(SUPPORTS)
-    public List<Solicitation> getSolicitations() {
-        return consultarEntidades( new Object[] {}, Solicitation.ALL_SOLICITATIONS);
-    }
+    @TransactionAttribute(SUPPORTS)
+    public List<Solicitation> consultarEntidades() {
+       return consultarEntidades( new Object[] {}, Solicitation.ALL_SOLICITATIONS);
+    }  
 
     @Override
     public Solicitation criar() {

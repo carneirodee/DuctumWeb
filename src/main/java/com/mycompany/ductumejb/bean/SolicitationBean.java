@@ -23,6 +23,7 @@ public class SolicitationBean{
 
     @EJB
     private SolicitationService serviceSolicitation;
+    private Solicitation solicitation = new Solicitation();
     List<Solicitation> lista = new ArrayList<>();
     
     public void iniciarCampos() {
@@ -35,12 +36,20 @@ public class SolicitationBean{
     }
 
     public List<Solicitation> getLista() {
-        lista = serviceSolicitation.getSolicitations();
+        lista = serviceSolicitation.consultarEntidades();
         return lista;
     }
 
     public void setLista(List<Solicitation> lista) {
         this.lista = lista;
+    }
+
+    public Solicitation getSolicitation() {
+        return solicitation;
+    }
+
+    public void setSolicitation(Solicitation solicitation) {
+        this.solicitation = solicitation;
     }
     
 

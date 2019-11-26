@@ -1,33 +1,33 @@
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/validator/ValidatorTypeSolicitation.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/servico/ClientService.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/entidade/Feature.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/validator/ValidateTypeSolicitation.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/typeenum/StatusSolicitation.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/validator/ValidatorTypeUser.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/entidade/Employee.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/entidade/Project.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/bean/SolicitationBean.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/entidade/Client.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/servico/Servico.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/entidade/Entidade.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/servico/CommentService.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/validator/ValidateTypeUser.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/servico/MeetingService.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/validator/ValidateStatusUser.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/entidade/Comment.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/entidade/Solicitation.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/servico/SolicitationService.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/validator/ValidatorStatusSolicitation.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/validator/ValidatorStatusUser.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/servico/EmployeeService.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/entidade/Meeting.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/bean/Bean.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/typeenum/TypeSolicitation.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/servico/ProjectService.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/typeenum/StatusUser.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/validator/ValidateStatusSolicitation.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/servico/FeatureService.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/entidade/Sprint.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/typeenum/TypeUser.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/entidade/UserSuper.java
-/home/deecarneiro/Área de Trabalho/TADS/DuctumEJB/src/main/java/com/mycompany/ductumejb/servico/SprintService.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/servico/ClientService.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/validator/ValidatorTypeSolicitation.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/servico/SprintService.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/validator/ValidatorTypeUser.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/servico/ProjectService.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/servico/FeatureService.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/bean/Bean.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/validator/ValidateStatusSolicitation.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/Sprint.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/validator/ValidateTypeSolicitation.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/bean/SolicitationBean.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/Entidade.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/typeenum/TypeSolicitation.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/validator/ValidateStatusUser.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/UserSuper.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/servico/SolicitationService.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/Project.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/Meeting.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/typeenum/StatusSolicitation.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/Solicitation.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/validator/ValidatorStatusSolicitation.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/servico/MeetingService.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/servico/EmployeeService.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/typeenum/TypeUser.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/Employee.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/Feature.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/servico/CommentService.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/servico/Servico.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/validator/ValidatorStatusUser.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/Comment.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/validator/ValidateTypeUser.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/Client.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/typeenum/StatusUser.java
