@@ -36,6 +36,11 @@ public class ClientServiceTest extends Teste{
        assertEquals(8, clientServico.consultarEntidades().size());
     }
    
+    @Test
+    public void consultar(){
+        Client cliente = clientServico.consultarEntidade("Admin123*", "admin1");
+        assertNotNull(cliente);
+    }
     
 //    @Test
 //    public void persistir(){

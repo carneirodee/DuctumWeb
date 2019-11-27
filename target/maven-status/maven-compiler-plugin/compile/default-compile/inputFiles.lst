@@ -6,6 +6,7 @@
 /home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/servico/FeatureService.java
 /home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/bean/Bean.java
 /home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/validator/ValidateStatusSolicitation.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/bean/LoginBean.java
 /home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/Sprint.java
 /home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/validator/ValidateTypeSolicitation.java
 /home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/bean/SolicitationBean.java
@@ -13,6 +14,7 @@
 /home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/typeenum/TypeSolicitation.java
 /home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/validator/ValidateStatusUser.java
 /home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/UserSuper.java
+/home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/main/main.java
 /home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/servico/SolicitationService.java
 /home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/Project.java
 /home/deecarneiro/NetBeansProjects/DuctumWeb/src/main/java/com/mycompany/ductumejb/entidade/Meeting.java

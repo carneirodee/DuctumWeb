@@ -29,8 +29,16 @@ public class ClientService extends Servico<Client> {
        return consultarEntidades( new Object[] {}, Client.ALL_CLIENTS);
     }
 
-    @Override
+    @TransactionAttribute(SUPPORTS)
     public Client criar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new Client();
     }
+
+    @TransactionAttribute(SUPPORTS)
+    public Client consultarEntidade(String senha, String login) {
+        return consultarEntidade( new Object[] {login,senha}, Client.PASS_AND_LOGIN); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
+    
 }

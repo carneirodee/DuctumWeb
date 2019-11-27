@@ -8,30 +8,22 @@
      </h:head>
  
     <h:body>
-        <p:outputLabel value="Lista de Solicitações" /> 
-        <h:form>
-                    <p:commandButton value="Inserir Solicitação" action="cadastroSolicitation" ajax="false"/>
+        
+        
+        <p:panelGrid columns="2" style="align:center; border: 0;margin-top: 10%;margin-left: 25%; width: 50%; border-style: hidden "  >
 
+        <p:graphicImage   url="resources/imgs/employee.png" width="300px" />   
+
+        
+   
+        <p:graphicImage  url="resources/imgs/client.png" width="300px" /> 
+
+        <h:form>
+            <p:commandButton value="Acessar Área dos Clientes" action="client/login"/>
         </h:form>
-        <br />
-        <p:dataTable value="#{solicitationBean.lista}" var="solicitation">
-            <p:column>
-                <f:facet name="header">Nome</f:facet>
-                <p:outputLabel value="#{solicitation.name}"/>
-            </p:column>
-             <p:column>
-                  <f:facet name="header">Descrição</f:facet>
-                 <p:outputLabel value="#{solicitation.description}"/>
-                </p:column> 
-            
-            <p:column>
-                    <f:facet name="header">Tipo</f:facet>
-                    <p:outputLabel value="#{solicitation.type}"/>
-                </p:column>
-            <p:column>
-                    <f:facet name="header">Status</f:facet>
-                    <p:outputLabel value="#{solicitation.status}"/>
-            </p:column>
-            </p:dataTable>
+        <h:form  >
+            <p:commandButton value="Acessar Área dos Funcionários" action="employee/login"/>
+        </h:form>
+    </p:panelGrid>
     </h:body>
 </html>

@@ -10,6 +10,7 @@ com/mycompany/ductumejb/entidade/Project.class
 com/mycompany/ductumejb/entidade/Comment_.class
 com/mycompany/ductumejb/servico/SprintService.class
 com/mycompany/ductumejb/validator/ValidateStatusUser.class
+com/mycompany/ductumejb/bean/LoginBean.class
 com/mycompany/ductumejb/entidade/UserSuper_.class
 com/mycompany/ductumejb/servico/CommentService.class
 com/mycompany/ductumejb/entidade/Feature.class
@@ -36,6 +37,7 @@ com/mycompany/ductumejb/typeenum/StatusUser.class
 com/mycompany/ductumejb/servico/MeetingService.class
 com/mycompany/ductumejb/validator/ValidatorTypeUser.class
 com/mycompany/ductumejb/entidade/Client.class
+main/main.class
 com/mycompany/ductumejb/entidade/Feature_.class
 com/mycompany/ductumejb/servico/EmployeeService.class
 com/mycompany/ductumejb/entidade/Sprint_.class

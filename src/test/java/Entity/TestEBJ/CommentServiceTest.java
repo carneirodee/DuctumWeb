@@ -33,7 +33,7 @@ public class CommentServiceTest extends Teste{
     
     @Test 
     public void consultarToddos(){
-       assertEquals(8, commentServico.consultarEntidades().size());
+       assertEquals(2, commentServico.consultarEntidades().size());
     }
    
     

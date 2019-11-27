@@ -24,12 +24,17 @@ import org.hibernate.validator.constraints.br.CPF;
             @NamedQuery(
                     name = Employee.ALL_EMPLOYEES,
                     query = "SELECT e FROM Employee e"
+            ),
+             @NamedQuery(
+                    name = Employee.PASS_AND_LOGIN,
+                    query = "SELECT e FROM Employee e WHERE e.login = ?1 AND e.password = ?2"
             )
         }
 )
 public class Employee extends UserSuper implements Serializable {
     
     public static final String ALL_EMPLOYEES = "All_Employees";
+    public static final String PASS_AND_LOGIN= "Employee_By_Pass";
     
     @CPF
     @NotNull

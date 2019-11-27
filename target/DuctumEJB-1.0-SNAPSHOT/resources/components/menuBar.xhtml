@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:composite = "http://java.sun.com/jsf/composite">
+ 
+    
+    <h:body>
+
+    <composite:interface>
+                <composite:facet name="header" />
+
+    </composite:interface>
+
+    
+    <composite:implementation>
+
+        <h:form>  
+            <p:menubar>
+                <p:submenu label="Cadastrar" >
+                    <p:menuitem value="Projeto" action="cadastrarProjeto?faces-redirect=true " />
+                    <p:menuitem value="Reunião" action="cadastrarMeeting?faces-redirect=true " />
+                    <p:menuitem value="Sprint" action="cadastrarSprint?faces-redirect=true" />
+                </p:submenu>
+
+
+                <p:menuitem value="Projetos" action="listarProjetos?faces-redirect=true " />
+                <p:menuitem value="Reuniões" action="listarMeetings?faces-redirect=true " />
+                <p:menuitem value="Solicitações" action="listarSolicitacoes?faces-redirect=true " />
+
+            </p:menubar>
+        </h:form>
+    </composite:implementation>
+        
+    </h:body>
+
+
+</html>

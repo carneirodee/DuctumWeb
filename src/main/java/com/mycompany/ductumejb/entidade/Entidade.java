@@ -24,11 +24,7 @@ public abstract class Entidade implements Serializable {
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
-    
-    @Version
-    @Column(name = "NUM_VERSAO")
-    protected int versao;
-
+   
     public Long getId() {
         return id;
     }
@@ -37,13 +33,6 @@ public abstract class Entidade implements Serializable {
         this.id = id;
     }
 
-    protected int getVersao() {
-        return versao;
-    }
-
-    protected void setVersao(int versao) {
-        this.versao = versao;
-    }
     
     @Override
     public int hashCode() {

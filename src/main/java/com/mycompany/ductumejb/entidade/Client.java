@@ -29,12 +29,18 @@ import org.hibernate.validator.constraints.br.CNPJ;
             @NamedQuery(
                     name = Client.ALL_CLIENTS,
                     query = "SELECT c FROM Client c"
+            ),
+             @NamedQuery(
+                    name = Client.PASS_AND_LOGIN,
+                    query = "SELECT c FROM Client c WHERE c.login = ?1 AND c.password = ?2 "
             )
         }
 )
 public class Client extends UserSuper implements Serializable {
     
     public static final String ALL_CLIENTS = "All_Clients";
+    public static final String PASS_AND_LOGIN= "Client_By_Id";
+
 
     @ManyToMany
     @JoinTable(name="client_has_Solicitations", joinColumns=

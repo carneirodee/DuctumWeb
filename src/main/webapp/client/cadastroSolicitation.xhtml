@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui">
+ 
+     <h:head>
+ 
+     </h:head>
+ 
+    <h:body>
+        <p:outputLabel value="Lista de Solicitações" /> 
+        <h:form id="Autor">            
+            <p:panel id="panel" header="Cadastro de Solicitação" footer="Cliente - Solicitações">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <h:outputLabel for="Nome" value="Nome: " />
+                    <p:inputText id="nome" value="#{solicitationBean.solicitation.name}" label="Nome" required="true"/>
+
+                    <h:outputLabel for="Descricao" value="Descrição: " />
+                    <p:inputText id="decricao" value="#{solicitationBean.solicitation.description}" label="Descricao" required="true"/>
+
+
+<!--                    <h:outputLabel for="Tipo" value="Primeiro Nome: " />
+                    <p:inputText id="primeiroNome" value="#{usuarioBean.entidade.primeiroNome}" label="Primeiro Nome" required="true"/>-->
+
+                
+                </h:panelGrid>
+                <p:commandButton action="#{solicitationBean.salvar()}" value="Salvar" ajax="false" update="growl, panel" 
+                                 title="Salvar Usuário" icon="ui-icon-play" validateClient="true"/>
+                <p:commandButton immediate="true" value="Cancelar" ajax="false" action="cancelar" icon="ui-icon-stop"/>
+            </p:panel>
+        </h:form>
+    </h:body>
+</html>

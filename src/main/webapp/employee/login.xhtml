@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:tp = "http://java.sun.com/jsf/composite/components">
+
+ 
+     <h:head>
+ 
+     </h:head>
+ 
+    <h:body>
+      <h:form>        
+     
+        <h:panelGrid columns="2" cellpadding="5">
+            <h:outputLabel for="login" value="Login:" />
+            <p:inputText id="login" binding="#{inputName}" required="true" label="login" />
+             
+            <h:outputLabel for="senha" value="Senha:" />
+            <p:password id="senha" binding="#{inputPass}" required="true" label="senha" />
+            <f:facet name="footer">
+                <p:commandButton value="Login" action="#{loginBean.loginEmployee(input1Name.value, inputPass.value)}"
+                               />
+            </f:facet>  
+        </h:panelGrid>
+</h:form>
+    </h:body>
+</html>
