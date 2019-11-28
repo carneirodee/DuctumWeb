@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Entity.TestEBJ.CommentServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.777 sec - in Entity.TestEBJ.CommentServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.451 sec - in Entity.TestEBJ.CommentServiceTest

@@ -19,7 +19,7 @@
             <h:outputLabel for="senha" value="Senha:" />
             <p:password id="senha" binding="#{inputPass}" required="true" label="senha" />
             <f:facet name="footer">
-                <p:commandButton value="Login" action="#{loginBean.loginEmployee(input1Name.value, inputPass.value)}"
+                <p:commandButton value="Login" action="#{loginBean.loginEmployee(inputName.value, inputPass.value)}"
                                />
             </f:facet>  
         </h:panelGrid>

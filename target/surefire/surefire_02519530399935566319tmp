@@ -1,7 +1,0 @@
-#surefire_0
-#Wed Nov 27 19:29:43 BRT 2019
-maven.ext.class.path=/home/deecarneiro/netbeans-8.2/java/maven-nblib/netbeans-eventspy.jar
-user.dir=/home/deecarneiro/NetBeansProjects/DuctumWeb
-localRepository=/home/deecarneiro/.m2/repository
-basedir=/home/deecarneiro/NetBeansProjects/DuctumWeb
-test=Entity.TestEBJ.**.*Test

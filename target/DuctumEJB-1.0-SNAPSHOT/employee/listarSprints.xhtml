@@ -3,14 +3,42 @@
     xmlns:f="http://java.sun.com/jsf/core"
     xmlns:p="http://primefaces.org/ui"
     xmlns:tp = "http://java.sun.com/jsf/composite/components">
-
  
      <h:head>
  
      </h:head>
  
     <h:body>
-                <tp:menuBar/>  
+        <tp:menuBar/>
+        <p:outputLabel value="Lista de Solicitações" /> 
+        <h:form>
+                    <p:commandButton value="Inserir Sprint" action="cadastrarSprint" ajax="false"/>
 
+        </h:form>
+        <br />
+        <p:dataTable value="#{sprintBean.lista}" var="sprint">
+            <p:column>
+                <f:facet name="header">Nome</f:facet>
+                <p:outputLabel value="Sprint #{sprint.ident}"/>
+            </p:column>
+             <p:column>
+                  <f:facet name="header">Projeto</f:facet>
+                  <p:outputLabel value="#{sprint.project.name}"/>
+             </p:column> 
+            
+            <p:column>
+                <p:dataTable value="#{sprint.features}" var="feature">
+                    <p:column>
+                      <f:facet name="header">Features</f:facet>
+                      <p:outputLabel value="#{feature.name}"/>   
+                    </p:column>
+                </p:dataTable>
+           </p:column>
+            </p:dataTable>
+
+        <h:form>
+            <p:commandButton value="Logout" action="#{loginBean.logout()}" ajax="false"/>
+
+        </h:form>
     </h:body>
 </html>

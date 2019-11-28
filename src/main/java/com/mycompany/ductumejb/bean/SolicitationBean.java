@@ -31,6 +31,7 @@ public class SolicitationBean{
     }
 
     public boolean salvar(Solicitation entidade) {
+    entidade.setId(Long.MIN_VALUE);
         serviceSolicitation.persistir(entidade);
         return true;
     }

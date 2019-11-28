@@ -9,6 +9,41 @@
      </h:head>
  
     <h:body>
-        <tp:menuBar/>  
+        <tp:menuBar/>
+        <p:outputLabel value="Lista de Solicitações" /> 
+        <h:form>
+                    <p:commandButton value="Inserir Projeto" action="cadastrarProjeto" ajax="false"/>
+
+        </h:form>
+        <br />
+        <p:dataTable value="#{projectBean.lista}" var="project">
+            <p:column>
+                <f:facet name="header">Nome</f:facet>
+                <p:outputLabel value="#{project.name}"/>
+            </p:column>
+             <p:column>
+                  <f:facet name="header">Cliente</f:facet>
+                  <p:outputLabel value="#{project.client.name}"/>
+                </p:column> 
+            
+<!--            <p:column>
+                    <f:facet name="header">Data de Inicio:</f:facet>
+                    <p:outputLabel value="#{project.beginDate}">
+                    </p:outputLabel>
+                </p:column>
+            <p:column>
+                    <f:facet name="header">Data Final</f:facet>
+                    <p:outputLabel value="#{project.deadLine.toString()}"/>
+            </p:column>-->
+             <p:column>
+                    <f:facet name="header">Responsável</f:facet>
+                    <p:outputLabel value="#{project.responsible.name}"/>
+            </p:column>
+        
+            </p:dataTable>
+        <h:form>
+            <p:commandButton value="Logout" action="#{loginBean.logout()}" ajax="false"/>
+
+        </h:form>
     </h:body>
 </html>
