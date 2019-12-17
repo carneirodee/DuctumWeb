@@ -1,4 +1,3 @@
-
 package com.mycompany.ductumejb.servico;
 
 import com.mycompany.ductumejb.entidade.Entidade;
@@ -20,7 +19,6 @@ import javax.validation.executable.ValidateOnExecution;
  *
  * @author deecarneiro
  */
-
 @Stateless
 @LocalBean
 @ValidateOnExecution(type = ExecutableType.ALL)
@@ -28,12 +26,34 @@ public class SolicitationService extends Servico<Solicitation> {
 
     @TransactionAttribute(SUPPORTS)
     public List<Solicitation> consultarEntidades() {
-       return consultarEntidades( new Object[] {}, Solicitation.ALL_SOLICITATIONS);
-    }  
+        return consultarEntidades(new Object[]{}, Solicitation.ALL_SOLICITATIONS);
+    }
 
     @Override
     public Solicitation criar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new Solicitation(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void persistir(Solicitation entidade) {
+        entityManager.persist(entidade);//To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Solicitation atualizar(Solicitation entidade) {
+        entityManager.merge(entidade);
+        entityManager.flush();
+        return entidade;
+    }
+
+    public void remover(Solicitation entidade) {
+        entidade = entityManager.merge(entidade);
+        entityManager.remove(entidade);
+
     }
     
+     @TransactionAttribute(SUPPORTS)
+     public List<Solicitation> consultarPorCliente(Long id) {
+        return consultarEntidades(new Object[]{id}, Solicitation.SOLICITATIONS_BY_CLIENT);
+    }
 }

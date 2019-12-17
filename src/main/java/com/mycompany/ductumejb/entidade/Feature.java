@@ -42,7 +42,6 @@ import org.hibernate.validator.constraints.NotBlank;
 public class Feature extends Entidade implements Serializable {
     
     public static final String ALL_FEATURES = "All_Features";
-    public static final String FEATURES_BY_SPRINT = "Features_By_Sprint";
 
   
     @NotBlank(message= "{Entity.Feature.title}")

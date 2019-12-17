@@ -31,7 +31,6 @@ public class MeetingBean{
     }
 
     public boolean salvar(Meeting entidade) {
-    entidade.setId(Long.MIN_VALUE);
         serviceMeeting.persistir(entidade);
         return true;
     }

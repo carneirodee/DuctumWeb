@@ -8,9 +8,9 @@ import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2019-11-27T19:35:17")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2019-12-17T01:49:26")
 @StaticMetamodel(Feature.class)
-public class Feature_ { 
+public class Feature_ extends Entidade_ {
 
     public static volatile ListAttribute<Feature, Comment> comments;
     public static volatile SingularAttribute<Feature, Calendar> created;

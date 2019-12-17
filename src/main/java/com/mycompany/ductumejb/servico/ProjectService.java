@@ -27,6 +27,24 @@ public class ProjectService extends Servico<Project> {
     public Project criar() {
         return new Project();
     }
+    
+     @Override
+    public void persistir(Project entidade) {
+        entityManager.persist(entidade);//To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Project atualizar(Project entidade) {
+        entityManager.merge(entidade);
+        entityManager.flush();
+        return entidade;
+    }
+
+    public void remover(Project entidade) {
+        entidade = entityManager.merge(entidade);
+        entityManager.remove(entidade);
+
+    }
 
     @TransactionAttribute(SUPPORTS)
     public List<Project> consultarEntidades() {

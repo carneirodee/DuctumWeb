@@ -43,13 +43,18 @@ import org.hibernate.validator.constraints.NotBlank;
              @NamedQuery(
                     name = Solicitation.ALL_SOLICITATIONS,
                     query = "SELECT s FROM Solicitation s"
-            )
+            ),
+             @NamedQuery(
+                    name = Solicitation.SOLICITATIONS_BY_CLIENT,
+                    query = "SELECT s FROM Solicitation s WHERE s.client.id LIKE ?1"
+             ),
         }
 )
 public class Solicitation  extends Entidade implements Serializable {
         public static final String SOLICITATION_BY_TYPE = "Solicitation_By_Type";
         public static final String ALL_SOLICITATIONS = "All_Solicitations";
-
+        public static final String SOLICITATIONS_BY_CLIENT = "Solicitations_By_Client";
+        
     private static final long serialVersionUID = 1L;
 
     @NotBlank
@@ -57,8 +62,8 @@ public class Solicitation  extends Entidade implements Serializable {
     @Column(name="name", nullable = false)
     private String name;
     
-    @ValidateTypeSolicitation
-    @Column(name="type", nullable = false)
+//    @ValidateTypeSolicitation
+    @Column(name="type")
     private TypeSolicitation type; 
     
     @NotBlank
@@ -66,8 +71,8 @@ public class Solicitation  extends Entidade implements Serializable {
     @Column(name="description")
     private String description; 
     
-    @NotNull
-    @ValidateStatusSolicitation
+//    @NotNull
+//    @ValidateStatusSolicitation
     @Column(name="status")
     private StatusSolicitation status;
     
@@ -82,6 +87,19 @@ public class Solicitation  extends Entidade implements Serializable {
     @ManyToOne
     @JoinColumn(name = "id_Project")
       private Project project;
+    
+    @ManyToOne
+    @JoinColumn(name = "client_id")
+    private Client client;
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+    
 
     public Project getProject() {
         return project;

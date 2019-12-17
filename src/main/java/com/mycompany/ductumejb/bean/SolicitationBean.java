@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
+import javax.ejb.TransactionAttribute;
+import static javax.ejb.TransactionAttributeType.SUPPORTS;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
@@ -16,28 +18,39 @@ import javax.inject.Inject;
  *
  * @author MASC
  */
-@Named(value="solicitationBean")
+@Named(value = "solicitationBean")
 @ApplicationScoped
-public class SolicitationBean{
-    
+public class SolicitationBean {
 
     @EJB
     private SolicitationService serviceSolicitation;
     private Solicitation solicitation = new Solicitation();
     List<Solicitation> lista = new ArrayList<>();
+
+    @Inject
+    private LoginBean login;
+    
+    
     
     public void iniciarCampos() {
-      serviceSolicitation.criar();
+        serviceSolicitation.criar();
     }
 
-    public boolean salvar(Solicitation entidade) {
-    entidade.setId(Long.MIN_VALUE);
-        serviceSolicitation.persistir(entidade);
-        return true;
+    public void salvar() {
+
+        System.out.println(solicitation.getName());
+        serviceSolicitation.persistir(solicitation);
     }
 
     public List<Solicitation> getLista() {
         lista = serviceSolicitation.consultarEntidades();
+        return lista;
+    }
+
+    @TransactionAttribute(SUPPORTS)
+    public List<Solicitation> getListaPorCliente(Long id) {
+        lista = serviceSolicitation.consultarPorCliente(id);
+        System.out.print(lista.toString());
         return lista;
     }
 
@@ -52,6 +65,5 @@ public class SolicitationBean{
     public void setSolicitation(Solicitation solicitation) {
         this.solicitation = solicitation;
     }
-    
 
 }

@@ -6,11 +6,13 @@ import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
@@ -42,25 +44,14 @@ public class Client extends UserSuper implements Serializable {
     public static final String PASS_AND_LOGIN= "Client_By_Id";
 
 
-    @ManyToMany
-    @JoinTable(name="client_has_Solicitations", joinColumns=
-    {@JoinColumn(name="id_Client")}, inverseJoinColumns=
-      {@JoinColumn(name="id_Solicitation")})
-    private List<Solicitation> solicitations;
+    
     
     @NotNull
     @CNPJ 
     @Column(name = "cnpj")
     private String cnpj;
     
-    
-    public List<Solicitation> getSolicitations() {
-        return solicitations;
-    }
 
-    public void setSolicitations(List<Solicitation> solicitations) {
-        this.solicitations = solicitations;
-    }
 
     public String getCnpj() {
         return cnpj;

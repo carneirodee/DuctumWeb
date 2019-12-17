@@ -27,6 +27,24 @@ public class SprintService extends Servico<Sprint> {
     public Sprint criar() {
         return new Sprint();
     }
+    
+     @Override
+    public void persistir(Sprint entidade) {
+        entityManager.persist(entidade);//To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Sprint atualizar(Sprint entidade) {
+        entityManager.merge(entidade);
+        entityManager.flush();
+        return entidade;
+    }
+
+    public void remover(Sprint entidade) {
+        entidade = entityManager.merge(entidade);
+        entityManager.remove(entidade);
+
+    }
 
    @TransactionAttribute(SUPPORTS)
     public List<Sprint> consultarEntidades() {

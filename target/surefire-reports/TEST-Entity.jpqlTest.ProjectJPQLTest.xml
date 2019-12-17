@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Entity.jpqlTest.ProjectJPQLTest" time="0.06" tests="2" errors="2" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Entity.jpqlTest.ProjectJPQLTest" time="2.531" tests="2" errors="2" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/amd64"/>
@@ -30,7 +30,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.0.0-23-generic"/>
+    <property name="os.version" value="5.0.0-37-generic"/>
     <property name="user.home" value="/home/deecarneiro"/>
     <property name="user.timezone" value="America/Fortaleza"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
@@ -59,26 +59,26 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="Entity.jpqlTest.ProjectJPQLTest" classname="Entity.jpqlTest.ProjectJPQLTest" time="0.06">
+  <testcase name="Entity.jpqlTest.ProjectJPQLTest" classname="Entity.jpqlTest.ProjectJPQLTest" time="2.531">
     <error message="No Persistence provider for EntityManager named com.mycompany_DuctumMaven_jar_1.0-SNAPSHOTPU" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: No Persistence provider for EntityManager named com.mycompany_DuctumMaven_jar_1.0-SNAPSHOTPU
 </error>
     <system-out><![CDATA[PlainTextActionReporterSUCCESSNo monitoring data to report.
 JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource]
 JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource]
 ]]></system-out>
-    <system-err><![CDATA[nov 27, 2019 7:37:40 PM org.eclipse.persistence.session.file:/tmp/gfembed5565011192560816475tmp/applications/classes/_com.mycompany_DuctumEJB_war_1.0-SNAPSHOTPU.connection
-INFORMAÇÕES: file:/tmp/gfembed5565011192560816475tmp/applications/classes/_com.mycompany_DuctumEJB_war_1.0-SNAPSHOTPU logout successful
-nov 27, 2019 7:37:40 PM com.sun.enterprise.connectors.service.ResourceAdapterAdminServiceImpl sendStopToResourceAdapter
+    <system-err><![CDATA[dez 17, 2019 2:03:53 AM org.eclipse.persistence.session.file:/tmp/gfembed4097185556485178668tmp/applications/classes/_com.mycompany_DuctumEJB_war_1.0-SNAPSHOTPU.connection
+INFORMAÇÕES: file:/tmp/gfembed4097185556485178668tmp/applications/classes/_com.mycompany_DuctumEJB_war_1.0-SNAPSHOTPU logout successful
+dez 17, 2019 2:03:53 AM com.sun.enterprise.connectors.service.ResourceAdapterAdminServiceImpl sendStopToResourceAdapter
 INFORMAÇÕES: RAR7094: __ds_jdbc_ra shutdown successful.
-nov 27, 2019 7:37:40 PM org.glassfish.admin.mbeanserver.JMXStartupService shutdown
+dez 17, 2019 2:03:53 AM org.glassfish.admin.mbeanserver.JMXStartupService shutdown
 INFORMAÇÕES: JMXStartupService and JMXConnectors have been shut down.
-nov 27, 2019 7:37:40 PM org.glassfish.admin.mbeanserver.JMXStartupService shutdown
+dez 17, 2019 2:03:53 AM org.glassfish.admin.mbeanserver.JMXStartupService shutdown
 INFORMAÇÕES: JMXStartupService and JMXConnectors have been shut down.
-nov 27, 2019 7:37:40 PM com.sun.enterprise.v3.server.AppServerStartup stop
+dez 17, 2019 2:03:53 AM com.sun.enterprise.v3.server.AppServerStartup stop
 INFORMAÇÕES: Shutdown procedure finished
 ]]></system-err>
   </testcase>
-  <testcase name="Entity.jpqlTest.ProjectJPQLTest" classname="Entity.jpqlTest.ProjectJPQLTest" time="0.06">
+  <testcase name="Entity.jpqlTest.ProjectJPQLTest" classname="Entity.jpqlTest.ProjectJPQLTest" time="2.531">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 </error>
   </testcase>

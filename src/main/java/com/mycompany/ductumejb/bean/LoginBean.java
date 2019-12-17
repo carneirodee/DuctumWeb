@@ -68,4 +68,37 @@ public class LoginBean implements Serializable{
     public String logout(){
               return "sair";
     }
+
+    public ClientService getServiceClient() {
+        return serviceClient;
+    }
+
+    public void setServiceClient(ClientService serviceClient) {
+        this.serviceClient = serviceClient;
+    }
+
+    public Client getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Client cliente) {
+        this.cliente = cliente;
+    }
+
+    public EmployeeService getServiceEmployee() {
+        return serviceEmployee;
+    }
+
+    public void setServiceEmployee(EmployeeService serviceEmployee) {
+        this.serviceEmployee = serviceEmployee;
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+    
 }

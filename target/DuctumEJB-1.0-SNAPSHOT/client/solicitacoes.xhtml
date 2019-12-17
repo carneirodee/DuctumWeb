@@ -9,13 +9,17 @@
      </h:head>
  
     <h:body>
-        <p:outputLabel value="Lista de Solicitações" /> 
+<p:sidebar widgetVar="sidebar1" baseZIndex="10000">
+    <h1 style="font-weight:normal">Left Sidebar</h1>
+    <p:commandButton value="Cancel" oncomplete="PF('sidebar1').hide()"/>
+</p:sidebar>        <p:outputLabel value="Lista de Solicitações" /> 
         <h:form>
                     <p:commandButton value="Inserir Solicitação" action="cadastroSolicitation" ajax="false"/>
 
         </h:form>
         <br />
-        <p:dataTable value="#{solicitationBean.lista}" var="solicitation">
+        <p:outputLabel value="#{loginBean.cliente.id}"/>
+        <p:dataTable value="#{solicitationBean.getListaPorCliente(loginBean.cliente.id)}" var="solicitation">
             <p:column>
                 <f:facet name="header">Nome</f:facet>
                 <p:outputLabel value="#{solicitation.name}"/>

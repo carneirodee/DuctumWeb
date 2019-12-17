@@ -27,6 +27,23 @@ public class FeatureService extends Servico<Feature>  {
     public Feature criar() {
         return new Feature();
     }
+     @Override
+    public void persistir(Feature entidade) {
+        entityManager.persist(entidade);//To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Feature atualizar(Feature entidade) {
+        entityManager.merge(entidade);
+        entityManager.flush();
+        return entidade;
+    }
+
+    public void remover(Feature entidade) {
+        entidade = entityManager.merge(entidade);
+        entityManager.remove(entidade);
+
+    }
 
     @TransactionAttribute(SUPPORTS)
     public List<Feature> consultarEntidades() {

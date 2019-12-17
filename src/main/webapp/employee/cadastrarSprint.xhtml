@@ -11,6 +11,20 @@
  
     <h:body>
         <tp:menuBar/>  
+        <p:outputLabel value="Lista de Solicitações" /> 
+        <h:form id="Autor">            
+            <p:panel id="panel" header="Cadastro de Solicitação" footer="Cliente - Solicitações">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <h:outputLabel for="Nome" value="Nome: " />
+                    <p:inputText id="Nome" value="#{solicitationBean.solicitation.name}" label="Nome" required="true"/>
 
+                    <h:outputLabel for="Descricao" value="Descrição: " />
+                    <p:inputText id="Descricao" value="#{solicitationBean.solicitation.description}" label="Descricao" required="true"/>
+
+                </h:panelGrid>
+                <p:commandButton action="#{solicitationBean.salvar()}" value="Salvar"/>
+                <p:commandButton immediate="true" value="Cancelar" ajax="false" action="cancelar" icon="ui-icon-stop"/>
+            </p:panel>
+        </h:form>
     </h:body>
 </html>

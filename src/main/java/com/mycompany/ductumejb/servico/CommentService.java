@@ -27,6 +27,23 @@ public class CommentService extends Servico<Comment> {
     public Comment criar() {
         return new Comment();
     }
+     @Override
+    public void persistir(Comment entidade) {
+        entityManager.persist(entidade);//To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Comment atualizar(Comment entidade) {
+        entityManager.merge(entidade);
+        entityManager.flush();
+        return entidade;
+    }
+
+    public void remover(Comment entidade) {
+        entidade = entityManager.merge(entidade);
+        entityManager.remove(entidade);
+
+    }
 
     @TransactionAttribute(SUPPORTS)
     public List<Comment> consultarEntidades() {

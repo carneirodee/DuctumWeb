@@ -27,6 +27,23 @@ public class MeetingService extends Servico<Meeting> {
     public Meeting criar() {
        return new Meeting();
     }
+     @Override
+    public void persistir(Meeting entidade) {
+        entityManager.persist(entidade);//To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Meeting atualizar(Meeting entidade) {
+        entityManager.merge(entidade);
+        entityManager.flush();
+        return entidade;
+    }
+
+    public void remover(Meeting entidade) {
+        entidade = entityManager.merge(entidade);
+        entityManager.remove(entidade);
+
+    }
 
     @TransactionAttribute(SUPPORTS)
     public List<Meeting> consultarEntidades() {
