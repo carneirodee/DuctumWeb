@@ -1,46 +1,57 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:p="http://primefaces.org/ui"
-    xmlns:tp = "http://java.sun.com/jsf/composite/components">
- 
-     <h:head>
- 
-     </h:head>
- 
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:tp = "http://java.sun.com/jsf/composite/components">
+
+    <h:head>
+
+    </h:head>
+
     <h:body>
         <tp:menuBar/>
         <p:outputLabel value="Lista de Solicitações" /> 
         <h:form>
-                    <p:commandButton value="Inserir Projeto" action="cadastrarProjeto" ajax="false"/>
+            <p:commandButton value="Inserir Projeto" action="cadastrarProjeto" ajax="false"/>
 
         </h:form>
         <br />
-        <p:dataTable value="#{projectBean.lista}" var="project">
-            <p:column>
-                <f:facet name="header">Nome</f:facet>
-                <p:outputLabel value="#{project.name}"/>
-            </p:column>
-             <p:column>
-                  <f:facet name="header">Cliente</f:facet>
-                  <p:outputLabel value="#{project.client.name}"/>
-                </p:column> 
-            
-<!--            <p:column>
-                    <f:facet name="header">Data de Inicio:</f:facet>
-                    <p:outputLabel value="#{project.beginDate}">
-                    </p:outputLabel>
+        <h:form>
+            <p:dataTable value="#{projectBean.lista}" var="project">
+                <p:column>
+                    <f:facet name="header">Nome</f:facet>
+                    <p:outputLabel value="#{project.name}"/>
+
                 </p:column>
-            <p:column>
-                    <f:facet name="header">Data Final</f:facet>
-                    <p:outputLabel value="#{project.deadLine.toString()}"/>
-            </p:column>-->
-             <p:column>
+                <p:column>
+                    <f:facet name="header">Cliente</f:facet>
+                    <p:outputLabel value="#{project.client.name}"/>
+
+                </p:column> 
+
+                <!--            <p:column>
+                                    <f:facet name="header">Data de Inicio:</f:facet>
+                                    <p:outputLabel value="#{project.beginDate}">
+                                    </p:outputLabel>
+                                </p:column>
+                            <p:column>
+                                    <f:facet name="header">Data Final</f:facet>
+                                    <p:outputLabel value="#{project.deadLine.toString()}"/>
+                            </p:column>-->
+                <p:column>
                     <f:facet name="header">Responsável</f:facet>
                     <p:outputLabel value="#{project.responsible.name}"/>
-            </p:column>
-        
+
+                </p:column>
+
+                <p:column>
+                    <p:commandButton value="Detalhes >>" action="#{projectBean.projectGo(project)}"/>
+
+                </p:column>
+
             </p:dataTable>
+        </h:form>
+
         <h:form>
             <p:commandButton value="Logout" action="#{loginBean.logout()}" ajax="false"/>
 

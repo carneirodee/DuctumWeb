@@ -1,40 +1,47 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:p="http://primefaces.org/ui"
-    xmlns:tp = "http://java.sun.com/jsf/composite/components">
- 
-     <h:head>
- 
-     </h:head>
- 
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:tp = "http://java.sun.com/jsf/composite/components">
+
+    <h:head>
+
+    </h:head>
+
     <h:body>
         <tp:menuBar/>
         <p:outputLabel value="Lista de Solicitações" /> 
         <h:form>
-                    <p:commandButton value="Inserir Sprint" action="cadastrarSprint" ajax="false"/>
+            <p:commandButton value="Inserir Sprint" action="cadastrarSprint" ajax="false"/>
 
         </h:form>
         <br />
-        <p:dataTable value="#{sprintBean.lista}" var="sprint">
+        <p:dataTable value="#{sprintBean.getListaPorProjeto(projectBean.project)}" var="sprint">
             <p:column>
                 <f:facet name="header">Nome</f:facet>
                 <p:outputLabel value="Sprint #{sprint.ident}"/>
             </p:column>
-             <p:column>
-                  <f:facet name="header">Projeto</f:facet>
-                  <p:outputLabel value="#{sprint.project.name}"/>
-             </p:column> 
-            
+            <p:column>
+                <f:facet name="header">Projeto</f:facet>
+                <p:outputLabel value="#{sprint.project.name}"/>
+            </p:column> 
+            <p:column>
+                <f:facet name="header">Reuniões</f:facet>
+                <p:commandButton value="Ir até Reuniões >>" action="#{sprintBean.sprintGoMeeting(sprint)}"/>
+            </p:column>   <p:column>
+                <f:facet name="header">Features</f:facet>
+                <p:commandButton value="Ir até Features >>" action="#{sprintBean.sprintGoFeature(sprint)}"/>
+            </p:column> 
             <p:column>
                 <p:dataTable value="#{sprint.features}" var="feature">
                     <p:column>
-                      <f:facet name="header">Features</f:facet>
-                      <p:outputLabel value="#{feature.title}"/>   
+                        <f:facet name="header">Features</f:facet>
+                        <p:outputLabel value="#{feature.title}"/>   
                     </p:column>
                 </p:dataTable>
-           </p:column>
-            </p:dataTable>
+            </p:column>
+        </p:dataTable>
+
 
         <h:form>
             <p:commandButton value="Logout" action="#{loginBean.logout()}" ajax="false"/>

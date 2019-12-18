@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:tp = "http://java.sun.com/jsf/composite/components">
+
+    <h:head>
+
+    </h:head>
+
+    <h:body>
+        <tp:menuBar/>
+        <p:dataTable value="#{featureBean.feature}" var="feature">
+            <p:column>
+                <p:outputLabel value="#{feature.title}" />
+                <p:outputLabel style="background-color: blue; color: white; border-radius: 50px" value="#{feature.points}" /> <br />
+                <p:outputLabel value="#{feature.description}" /> <br /> 
+            </p:column>
+
+
+        </p:dataTable>
+        <p:dashboard>
+ 
+            <p:panel id="sports" header="#{featureBean.feature.title}">
+                <h:outputText value="#{featureBean.feature.description}" />
+            </p:panel>
+        </p:dashboard>
+    </h:body>
+</html>

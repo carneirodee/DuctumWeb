@@ -1,28 +1,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:p="http://primefaces.org/ui"
-    xmlns:tp = "http://java.sun.com/jsf/composite/components">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:tp = "http://java.sun.com/jsf/composite/components">
 
- 
-     <h:head>
- 
-     </h:head>
- 
+
+    <h:head>
+
+    </h:head>
+
     <h:body>
         <tp:menuBar/>  
-             <p:outputLabel value="Lista de Solicitações" /> 
+        <p:outputLabel value="Lista de Features" /> 
         <h:form id="Autor">            
-            <p:panel id="panel" header="Cadastro de Solicitação" footer="Cliente - Solicitações">
+            <p:panel id="panel" header="Cadastro de Feature" footer="Cliente - Features">
                 <h:panelGrid columns="2" cellpadding="5">
                     <h:outputLabel for="Nome" value="Nome: " />
-                    <p:inputText id="Nome" value="#{solicitationBean.solicitation.name}" label="Nome" required="true"/>
+                    <p:inputText id="Nome" value="#{featureBean.feature.title}" label="Nome" required="true"/>
 
                     <h:outputLabel for="Descricao" value="Descrição: " />
-                    <p:inputText id="Descricao" value="#{solicitationBean.solicitation.description}" label="Descricao" required="true"/>
+                    <p:inputText id="Descricao" value="#{featureBean.feature.description}" label="Descricao" required="true"/>
+                    <h:outputLabel for="Pontos" value="Pontos" />
+                    <p:inputText id="Pontos" value="#{featureBean.feature.points}" label="Pontos" required="true"/>
 
                 </h:panelGrid>
-                <p:commandButton action="#{solicitationBean.salvar()}" value="Salvar"/>
+                <p:commandButton action="#{featureBean.salvar(featureBean.feature)}" value="Salvar"/>
                 <p:commandButton immediate="true" value="Cancelar" ajax="false" action="cancelar" icon="ui-icon-stop"/>
             </p:panel>
         </h:form>
